@@ -3,11 +3,12 @@
     <div class="title">
         <h1><img src="../../public/wave.svg" alt="pacific logo" id="logo" /> Pacific.</h1>
         <nav>
-            <p>Skiing</p>
-            <p>Bobsled</p>
-            <p>Skeleton</p>
-            <p>Snowboarding</p>
+            <router-link to="/skiing">Skiing</router-link>
+            <router-link to="/bobsled">Bobsled</router-link>
+            <router-link to="/skeleton">Skeleton</router-link>
+            <router-link to="/snowboarding">Snowboarding</router-link>
         </nav>
+        <router-view />
     </div>
     <div class="address">
         <p>1100 Lexington Ave</p>
@@ -43,13 +44,22 @@
         nav {
             float: right;
 
-            p {
+            a {
+                display: flex;
+                flex-direction: column;
+                text-decoration: none;
                 color: black;
                 font-family: 'Bebas Neue', cursive;
                 font-size: 4rem;
                 letter-spacing: 0.8rem;
                 margin: 0 0 1rem 0;
                 padding: 0;
+                transition: all 0.2s ease;
+
+                &:hover {
+                    transition: all 0.2s ease;
+                    color: rgb(255, 28, 86);
+                }
             }
         }
     }
