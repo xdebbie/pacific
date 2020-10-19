@@ -39,19 +39,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.page__container {
-    margin: 2.5rem 0 0 0;
-    padding: 0;
-    width: 65%;
-
-    .images {
-        width: 100%;
-        height: auto;
-    }
-
-    .story-carousel .story-carousel__slide {
-        widows: 60%;
-        color: #fff;
-    }
-}
+@import '@/scss/_main.scss';
 </style>
