@@ -16,23 +16,22 @@
 <style lang="scss" scoped>
 .navmenu {
     .title {
-        margin: 2rem 0 2rem 7rem;
+        margin: 1rem 0 2rem 7rem;
 
         #logo {
-            width: 6rem;
+            width: 6.5rem;
             position: absolute;
-            top: 2rem;
+            top: 2.8rem;
             left: 4.3rem;
+            transform: scaleX(-1);
         }
 
         #logo__text {
             text-decoration: none;
             color: black;
-            font-family: 'Special Elite', cursive;
+            font-family: 'Zilla Slab Highlight', cursive;
             font-size: 5rem;
-            letter-spacing: 1rem;
             padding: 0;
-            text-transform: lowercase;
         }
     }
 
